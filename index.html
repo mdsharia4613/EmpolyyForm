@@ -9,23 +9,115 @@
 </head>
 
 <body>
-    <div>
-        <h2>Employee Availability Form</h2>
+    <div class="header">
+        <h1>Employee Availability Form</h1>
         <p>Please fill out the form to provide your availability for shifts or project assignments.
 
         </p>
     </div>
 
-    <form action="">
-        <label for="" class="form-item">Full Name<input type="text"></label>
-        <label for="" class="form-item">Employee ID (Optional)<input type="text"></label>
-        <label for="" class="form-item">Department / Team*
-            <input type="text"></label>
-        <label for="" class="form-item">Contact Email<input type="text"></label>
-        <label for="" class="form-item">Phone Number*<input type="text"></label>
-        <label for="" class="form-item">Available Time Slots<input type="text"></label>
-        <label for="">Preferred Shift (Optional) in</label>
-        
+    <form>
+        <div class="form-section">
+            <div class="form-item">
+                <label for="">Full Name</label>
+                <input class="form-input" type="text">
+            </div>
+            <div class="form-item">
+                <label for="">Employee ID (Optional)</label>
+                <input class="form-input" type="text">
+            </div>
+            <div class="form-item">
+                <label for="">Employee ID (Optional)</label>
+                <input class="form-input" type="text">
+            </div>
+            <div class="form-item">
+                <label for="">Department / Team*</label>
+                <input class="form-input" type="text">
+            </div>
+            <div class="form-item">
+                <label for="">Contact Email*</label>
+                <input class="form-input" type="text">
+            </div>
+            <div class="form-item">
+                <label for="">Phone Number*</label>
+                <input class="form-input" type="text">
+            </div>
+            <div>
+                <label class="form-item">Days available (select all that apply)</label>
+                <div>
+                    <label class="checkbox"><input type="checkbox" name="days" value="monday"> Monday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="tuesday"> Tuesday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="wednesday"> Wednesday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="thursday"> Thursday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="friday"> Friday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="saturday"> Saturday</label>
+                    <label class="checkbox"><input type="checkbox" name="days" value="sunday"> Sunday</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="form-item">
+                <label for="">Available Time Slot</label>
+                <input class="form-input" type="text" placeholder="e.g., 9 AM - 5 PM">
+            </div>
+
+            <div class="form-item">
+                <label for="">Preferred Shift (Optional)</label>
+                <select>
+                    <option value="morning">morning</option>
+                    <option value="afternoon">afternoon</option>
+                    <option value="evening">evening</option>
+                    <option value="night">night</option>
+            </div>
+            
+
+            <div class="form-item">
+                <label for="">Start Date of Availability
+                </label>
+                <input class="form-input" type="date">
+            </div>
+
+            <div class="form-item">
+                <label for="">End Date (if temporary)</label>
+                <input class="form-input" type="date">
+            </div>
+
+            <div class="form-item">
+                <label for="">Is Availability Recurring?</label>
+                <select class="form-input" name="" id="">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div class="form-item">
+                <label for="">Total Weekly Hours Preferred (Optional)</label>
+                <textarea class="form-text-area" name="" id=""></textarea>
+            </div>
+            <div class="form-item">
+                <label for="">Notes or Constraints (Optional)</label>
+                <textarea class="form-text-area" name="" id=""></textarea>
+            </div>
+            <div class="form-item">
+                <label for="">Flexibility Comment (Optional)</label>
+                <textarea class="form-text-area" name="" id=""></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="">
+                <label>I confirm the above availability is accurate to the best of my knowledge.
+                </label>
+            </div>
+
+        </div>
+
+        <div class="form-item">
+            <button class="submit-button" type="submit">Submit Availability</button>
+        </div>
+
 
     </form>
 

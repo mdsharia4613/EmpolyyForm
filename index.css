@@ -1,0 +1,64 @@
+body{
+    font-family: poppins;
+   background: white;
+}
+
+.header{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px grey;
+}
+
+form{
+    width: 500px;
+    /* border: 2px solid grey; */
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px 10px wheat;
+    
+    
+}
+.form-item{
+    display: grid;
+    margin: 10px 0;
+    font-weight: bold;
+    color: gray;
+    
+}
+
+.checkbox{
+    color: gray;
+    font-bold: bold
+}
+.submit-button{
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.submit-button:hover{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 30px;
+    padding: 5px;
+}
+
+.form-text-area{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 80px;
+    padding: 5px;
+    resize: none;
+}
